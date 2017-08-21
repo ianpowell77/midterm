@@ -1,9 +1,63 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<link href="https://fonts.googleapis.com/css?family=Baloo+Bhaijaan" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="lib/css/main.css">
+	<title>Midterm | Home</title>
 </head>
 <body>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="./index.html">Home</a></li>
+				<li>Contact</li>
+				<li><a href="./table.html">Table</a></li>
+				<li><a href="./codepen.html">Codepen</a></li>
+				<div class="dropdown">
+					<li><a href="#">Dropdown</a></li>
+					<div class="dropdown-content">
+						<a href="#">Link 1</a>
+						<a href="#">Link 2</a>
+						<a href="#">Link 3</a>
+					</div>
+				</div>
+			</ul>
+		</nav>
+	</header>
+  <main class="all-content">
+  	<h1>Contact me!</h1>
+    <form action="#" method="GET" id="contact-info">
+      <label for="firstname">First Name:</label>
+      <input type="text" name="firstname" id="firstname" required>
 
+      <label for="lastname'">Last Name:</label>
+      <input type="text" name="lastname" id="lastname" required>
+
+      <label for="email">Email:</label>
+      <input type="email" name="email" id="email" required>
+
+      <label for="phone">Phone:</label>
+      <input type="number" name="phone" id="phone">
+
+      <label for="colors">Pick your favorite color!</label>
+      <select name="colors">
+        <option id="red" value="red">Red</option>
+        <option id="blue" value="blue">Blue</option>
+        <option id="green" value="green">Green</option>
+      </select>
+
+      <textarea placeholder="Give some feedback..."></textarea>
+
+      <input type="submit" name="submit" id="submit" value="Submit">
+
+    </form>
+  </main>
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
+  <script type="text/javascript" src="lib/js/scripts.js"></script>
 </body>
 </html>
